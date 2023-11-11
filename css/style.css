@@ -1,0 +1,28 @@
+.navbar {
+  z-index: 9;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.carousel-indicators {
+  right: 0;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  left: unset;
+  flex-direction: column;
+}
+
+.carousel-caption {
+  transform: translate(0, 50%);
+  bottom: 50%;
+}
+.play-pause {
+    width: 10px;
+    height: 10px;
+}
+.pointer{
+    cursor: pointer;
+}
