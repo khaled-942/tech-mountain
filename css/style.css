@@ -1,7 +1,11 @@
 .navbar {
   z-index: 9;
+  transition-duration: 0.5s;
 }
-
+*::selection {
+    background: #f6a610;
+    color: white;
+}
 .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
@@ -20,9 +24,60 @@
   bottom: 50%;
 }
 .play-pause {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
-.pointer{
-    cursor: pointer;
+.pointer {
+  cursor: pointer;
+}
+.border-custom {
+  border-color: #f6a610 !important;
+}
+.orangeColor {
+  color: #f6a610;
+}
+
+.services {
+  background: url(../assets/images/1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.w-fit {
+  width: fit-content;
+}
+.capability {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .capability {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+ul li {
+  margin-bottom: 1rem;
+}
+.forLinkC {
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  text-align: start;
+  padding-left: 1rem;
+  transition-duration: 0.5s;
+  width: 75%;
+}
+.forLinkC:hover {
+  background-color: #f6a610;
+  padding-left: 2rem;
+}
+.forLinkC.active {
+  background-color: #f6a610;
+  padding-left: 2rem;
+}
+.card-border {
+  border-bottom: 3px solid black !important;
+}
+.listStyle {
+  list-style-image: url(../assets/images/check2-circle.svg);
+}
+.bg-costum{
+  background-color: #f6a610;
 }
