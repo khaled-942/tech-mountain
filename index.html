@@ -6,11 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/logo.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
 <body>
+
+  <div class="buttons position-fixed text-light fs-4 bottom-0 mb-3 ms-3 pointer">
+    <div class="hidden-buttons flex-column gap-2 mb-3">
+      <i class="bi bi-whatsapp pointer share" style="background-color: #00E676;"></i>
+      <i class="bi bi-facebook pointer share" style="background-color:#3F51B5 ;"></i>
+      <i class="bi bi-instagram pointer share" style="background-color:#F44336 ;"></i>
+      <i class="bi bi-twitter pointer share" style="background-color:#03A9F4 ;"></i>
+      <i class="bi bi-pinterest pointer share" style="background-color: #E60023;"></i>
+      <i class="bi bi-linkedin pointer share" style="background-color: #007BB6;"></i>
+    </div>
+    <i class="bi bi-share-fill share"></i>
+  </div>
+
   <nav id="nav" class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid" id="logo"
@@ -22,21 +38,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+            <a class="nav-link orangeColor active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#about">About</a>
+            <a class="nav-link orangeColor" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#services">Services</a>
+            <a class="nav-link orangeColor" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Portfolio</a>
+            <a class="nav-link orangeColor" href="#">Portfolio</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators gap-1">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -50,31 +67,32 @@
     <div class="carousel-inner ">
       <div class="carousel-item active">
         <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
     </div>
   </div>
+
   <div class="bg-light text-center py-5 container" id="about">
     <h4 class="d-inline-block mt-5">
       ABOUT US
-      <hr class="border-custom">
+      <hr class="border-custom border-2 border">
     </h4>
     <h1>
       Lorem, <span class="orangeColor">New</span> & new Title
@@ -85,74 +103,75 @@
       sunt aut iusto deserunt quaerat quas doloremque voluptas accusamus at dicta aliquid. Magni, ducimus libero!
     </p>
   </div>
+
   <div class="services text-center text-light py-5">
     <h4 class="d-inline-block mt-5">
       OUR CAPABILITIES
-      <hr class="border-custom">
+      <hr class="border-custom border-2 border">
     </h4>
     <br>
     <div class="container capability mb-5">
-      <div class="links position-relative">
-        <div class="d-flex flex-column gap-3">
-          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active forLinkC pointer py-2"
-            aria-current="true" aria-label="Slide 1">Subtitle 1</div>
+      <div class="links position-relative w-100">
+        <div class="d-flex flex-column align-items-center">
+          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+            class="active forLinkC pointer py-2 pe-5 w-fit" aria-current="true" aria-label="Slide 1">Subtitle 1</div>
           <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"
-            class="forLinkC pointer py-2">Subtitle 2</div>
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 2</div>
           <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"
-            class="forLinkC pointer py-2">Subtitle 3</div>
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 3</div>
           <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"
-            class="forLinkC pointer py-2">Subtitle 4</div>
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 4</div>
           <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5"
-            class="forLinkC pointer py-2">Subtitle 5</div>
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 5</div>
         </div>
       </div>
 
-      <div class="text position-relative">
-        <div id="carouselExampleCaptions3" class="carousel slide top-0 w-100 h-100 p-2" data-bs-ride="false">
-          <div class="carousel-inner bg-light text-dark border-bottom border-4 rounded p-2 border-custom">
+      <div class="text position-relative w-100">
+        <div id="carouselExampleCaptions3" class="carousel slide top-0 w-100 h-100 width-custom" data-bs-ride="false">
+          <div class="carousel-inner bg-light text-dark border-bottom border-4 p-3 rounded border-custom">
             <div class="carousel-item active">
               <h4 class="orangeColor">Header</h4>
-              <ul class="text-start listStyle">
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
+              <ul class="text-center listStyle">
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
               </ul>
             </div>
             <div class="carousel-item">
               <h4 class="orangeColor">Header</h4>
-              <ul class="text-start listStyle">
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
+              <ul class="text-center listStyle">
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
               </ul>
             </div>
             <div class="carousel-item">
               <h4 class="orangeColor">Header</h4>
-              <ul class="text-start listStyle">
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
+              <ul class="text-center listStyle">
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
               </ul>
             </div>
             <div class="carousel-item">
               <h4 class="orangeColor">Header</h4>
-              <ul class="text-start listStyle">
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
+              <ul class="text-center listStyle">
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
               </ul>
             </div>
             <div class="carousel-item">
               <h4 class="orangeColor">Header</h4>
-              <ul class="text-start listStyle">
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
-                <li>Lorem ipsum Lorem ipsum</li>
+              <ul class="text-center listStyle">
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
+                <li><i class="bi bi-check2-circle orangeColor"></i>Lorem ipsum Lorem ipsum</li>
               </ul>
             </div>
           </div>
@@ -160,42 +179,42 @@
       </div>
 
 
-      <figure class="position-relative mx-auto w-fit m-0">
-        <img src="assets/images/screen.png" alt="" srcset="">
+      <figure class="position-relative mx-auto m-0 screen">
+        <img src="assets/images/screen.png" class="img-fluid" alt="" srcset="">
         <div id="carouselExampleCaptions2" class="carousel slide position-absolute top-0 w-100 h-100 p-2"
           data-bs-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="assets/images/1.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="assets/images/2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="assets/images/3.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="assets/images/1.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="assets/images/2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
               </div>
@@ -205,10 +224,11 @@
       </figure>
     </div>
   </div>
+
   <div class="bg-light text-center py-4 container" id="services">
     <h4 class="d-inline-block mt-5">
       OUR SERVICE
-      <hr class="border-custom">
+      <hr class="border-custom border-2 border">
     </h4>
     <br>
     <p class="fs-4 mb-5">
@@ -217,6 +237,7 @@
       sunt aut iusto deserunt quaerat quas doloremque voluptas accusamus at dicta aliquid. Magni, ducimus libero!
     </p>
   </div>
+
   <div class="bg-costum text-center text-light py-4">
     <h4 class="d-inline-block mt-5">
       SERVICES WE PROVIDE
@@ -226,7 +247,7 @@
     <div class="container d-flex justify-content-evenly gap-3 mb-5 flex-md-nowrap flex-wrap">
       <div class="card border-0 p-3">
         <div class="card-body">
-          <img src="assets/images/gear-fill.svg" class="mb-3" alt="" srcset="">
+          <i class="bi bi-gear-fill orangeColor fs-4 mb-3"></i>
           <h5 class="card-title text-dark">SERVICE 1</h5>
           <p class="card-text orangeColor">Some quick example text to build on the card title and make up the bulk of
             the card's content.</p>
@@ -234,7 +255,7 @@
       </div>
       <div class="card border-0 p-3">
         <div class="card-body">
-          <img src="assets/images/tools.svg" class="mb-3" alt="" srcset="">
+          <i class="bi bi-tools orangeColor fs-4 mb-3"></i>
           <h5 class="card-title text-dark">SERVICE 2</h5>
           <p class="card-text orangeColor">Some quick example text to build on the card title and make up the bulk of
             the card's content.</p>
@@ -242,7 +263,7 @@
       </div>
       <div class="card border-0 p-3">
         <div class="card-body">
-          <img src="assets/images/wrench-adjustable.svg" class="mb-3" alt="" srcset="">
+          <i class="bi bi-wrench-adjustable orangeColor fs-4 mb-3"></i>
           <h5 class="card-title text-dark">SERVICE 3</h5>
           <p class="card-text orangeColor">Some quick example text to build on the card title and make up the bulk of
             the card's content.</p>
@@ -251,13 +272,52 @@
     </div>
   </div>
 
+  <div class="bg-dark text-center text-light py-4">
+    <h4 class="d-inline-block mt-5">
+      PRODUCTS WE USE
+      <hr class="border-light border-2 border">
+    </h4>
+    <br>
+    <div class="autoplay container">
+      <img src="assets/images/brands/1.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/2.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/3.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/4.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/5.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/6.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/7.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/8.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/9.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/10.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/11.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/12.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/13.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/14.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/15.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/16.png" class="img-fluid" alt="" srcset="">
+      <img src="assets/images/brands/17.png" class="img-fluid" alt="" srcset="">
+    </div>
+  </div>
+
   <footer>
     <div class="bg-dark text-white text-center py-2">
+      <div class="social d-flex gap-3 align-items-center justify-content-center">
+        <i class="bi bi-facebook orangeColor pointer"></i>
+        <i class="bi bi-twitter orangeColor pointer"></i>
+        <i class="bi bi-instagram orangeColor pointer"></i>
+        <i class="bi bi-pinterest orangeColor pointer"></i>
+        <i class="bi bi-linkedin orangeColor pointer"></i>
+      </div>
+      <br>
       &copy;Tech 2023 <span class="orangeColor">Policy & Privacy</span>
     </div>
   </footer>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="slick/jquery-1.11.0.min.js"></script>
+  <script src="slick/jquery-migrate-1.2.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
 
   <script src="js/script.js"></script>
 </body>

@@ -1,3 +1,16 @@
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  arrows:false
+});
+$(".share").on("mouseenter", (e) => {
+  $(".hidden-buttons").addClass('d-flex')
+})
+$(".buttons").on("mouseleave", (e) => {
+  $(".hidden-buttons").removeClass('d-flex')
+})
 $(".forLinkC").on("click", (e) => {
   $(e.target).addClass("active");
   Array.from($(e.target).siblings()).map((e) => {
