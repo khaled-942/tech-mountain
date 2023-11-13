@@ -1,5 +1,6 @@
 .navbar {
   z-index: 9;
+  position: fixed !important;
   transition-duration: 0.5s;
 }
 *::selection {
@@ -70,9 +71,11 @@
     justify-items: center;
     align-items: center;
   }
-  #nav {
+   #nav {
+    position: sticky !important;
     background-color: #ccc !important;
   }
+  
   #nav .nav-link {
     color: white !important;
   }

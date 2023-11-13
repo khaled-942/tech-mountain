@@ -27,7 +27,7 @@
     <i class="bi bi-share-fill share"></i>
   </div>
 
-  <nav id="nav" class="navbar navbar-expand-lg position-fixed top-0 w-100">
+  <nav id="nav" class="navbar navbar-expand-lg top-0 w-100">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid" id="logo"
           srcset="" width="100"></a>
@@ -36,19 +36,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav w-100 mx-auto mb-2 mb-lg-0 justify-content-around">
           <li class="nav-item">
-            <a class="nav-link orangeColor active" aria-current="page" href="#">Home</a>
+            <a class="nav-link orangeColor active" aria-current="page" href="#carouselExampleCaptions"><i class="bi bi-dot"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link orangeColor" href="#about">About</a>
+            <a class="nav-link orangeColor" href="#about"><i class="bi bi-dot"></i> About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link orangeColor" href="#services">Services</a>
+            <a class="nav-link orangeColor" href="#services"><i class="bi bi-dot"></i> Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link orangeColor" href="#">Portfolio</a>
+            <a class="nav-link orangeColor" href="#"><i class="bi bi-dot"></i> Portfolio</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link orangeColor" href="#carouselExampleCaptions" id="arrowUp"><i class="bi bi-arrow-up"></i></a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -112,7 +117,7 @@
     <br>
     <div class="container capability mb-5">
       <div class="links position-relative w-100">
-        <div class="d-flex flex-column align-items-center">
+        <div class="d-flex flex-column align-items-lg-center">
           <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
             class="active forLinkC pointer py-2 pe-5 w-fit" aria-current="true" aria-label="Slide 1">Subtitle 1</div>
           <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"

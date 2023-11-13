@@ -23,9 +23,13 @@ function detect() {
   if (window.scrollY == 0) {
     $("#nav").css("background-color", "transparent");
     $("#logo").attr("src", "assets/images/logo.png");
+    $('#arrowUp').addClass('d-none');
+    $('#nav').addClass('position-sticky').removeClass('position-fixed');
   } else {
     $("#nav").css("background-color", "black");
     $("#logo").attr("src", "assets/images/logo2.png");
+    $('#arrowUp').removeClass('d-none');
+    $('#nav').removeClass('position-sticky').addClass('position-fixed');
   }
 }
 detect();
