@@ -1,39 +1,87 @@
+@font-face {
+  font-family: 'header';
+  src: url(../assets/fonts/header.ttf);
+}
+
+@font-face {
+  font-family: 'body';
+  src: url(../assets/fonts/body.ttf);
+}
+
+body {
+  font-family: 'body';
+}
+
+h1 {
+  font-family: header;
+}
+
 .navbar {
   z-index: 9;
   position: fixed !important;
   transition-duration: 0.5s;
 }
+
 *::selection {
   background: #f6a610;
   color: white;
 }
-.carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+
+.bi-circle {
+  font-size: 0.5rem;
 }
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: auto;
+  border-radius: 50%;
+  background-clip: unset !important;
+  box-sizing: border-box !important;
+  transform: scale(0.5) translate3d(0, 0, 0);
+}
+
+.carousel-indicators [data-bs-target]:hover,
+.carousel-indicators .active {
+  background-color: transparent;
+  height: 20px;
+  border: 2px solid white;
+  transform: scale(1) translate3d(0, 0, 0);
+}
+
 .carousel-indicators {
-  right: 0;
+  right: 3%;
   bottom: 50%;
   transform: translate(0, 50%);
   left: unset;
+  margin-right: 0;
   flex-direction: column;
 }
 
-.carousel-caption {
-  transform: translate(0, 50%);
-  bottom: 50%;
+.carousel-indicators .active {
+  border-color: #f6a610;
 }
+
+.carousel-caption {
+  transform: translate(-40%, 50%);
+  bottom: 50%;
+  right: unset;
+  text-align: start;
+  left: 40%;
+}
+
 .play-pause {
   width: 10px;
   height: 10px;
 }
+
 .pointer {
   cursor: pointer;
 }
+
 .border-custom {
   border-color: #f6a610 !important;
 }
+
 .orangeColor,
 .orangeColor:hover,
 .orangeColor.active {
@@ -44,24 +92,30 @@
   background: url(../assets/images/1.jpg) no-repeat center center;
   background-size: cover;
 }
+
 .w-fit {
   width: fit-content;
 }
+
 .links {
   grid-area: links;
 }
+
 .screen {
   grid-area: screen;
 }
+
 .text {
   grid-area: text;
 }
+
 .capability {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "links text screen";
   gap: 1rem;
 }
+
 @media screen and (max-width: 768px) {
   .capability {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -71,15 +125,26 @@
     justify-items: center;
     align-items: center;
   }
-   #nav {
+
+  #nav {
     position: sticky !important;
-    background-color: #ccc !important;
+    background-color: #000 !important;
   }
   
-  #nav .nav-link {
-    color: white !important;
+  div#navbarSupportedContent {
+    background-color: #444;
+    padding: 0 16px;
   }
 }
+
+#nav .nav-link {
+  color: white !important;
+}
+
+#nav .nav-link:hover {
+  color: #f6a610 !important;
+}
+
 @media screen and (max-width: 480px) {
   .capability {
     grid-template-columns: repeat(1, 1fr) !important;
@@ -91,57 +156,81 @@
     align-items: center;
   }
 }
-ul li {
-  margin-bottom: 1rem;
+
+.listStyle li {
+  margin-bottom: 1.5rem;
 }
+
 .forLinkC {
   clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
   text-align: start;
   padding-left: 1rem;
   transition-duration: 0.5s;
 }
+
 .forLinkC:hover {
   background-color: #f6a610;
   padding-left: 2rem;
 }
+
 .forLinkC.active {
   background-color: #f6a610;
   padding-left: 2rem;
 }
+
 .card-border {
   border-bottom: 3px solid black !important;
 }
+
 .listStyle {
   list-style: none;
   padding: 0;
 }
+
 .listStyle li {
   display: flex;
   column-gap: 5px;
   justify-content: center;
 }
+
 .bg-costum {
   background-color: #f6a610;
 }
-.social i.orangeColor{
+
+.social i.orangeColor {
   padding: 5px 10px;
   border: 2px solid #f6a610;
   border-radius: 50%;
   transition-duration: 0.5s;
 }
+
 .social i.orangeColor:hover {
   color: white !important;
   background-color: #f6a610;
 }
-.buttons i {
+
+.buttons i,
+.toTop {
   z-index: 1;
-  padding: 5px 10px;
+  padding: 13px;
   border-radius: 50%;
   background-color: #f6a610;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.buttons{
+.toTop{
+  padding: 8px 13px;
+}
+#logoImage {
+  transition-duration: 0.5s;
+}
+
+.buttons {
   z-index: 9;
 }
-.hidden-buttons{
+
+.hidden-buttons {
   display: none;
 }

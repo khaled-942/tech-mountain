@@ -26,41 +26,40 @@
     </div>
     <i class="bi bi-share-fill share"></i>
   </div>
+  <a class="nav-link orangeColor pointer position-fixed bottom-0 mb-3 me-3 toTop end-0" href="#carouselExampleCaptions"
+    id="arrowUp"><i class="text-light fs-4 bi bi-arrow-up"></i></a>
 
   <nav id="nav" class="navbar navbar-expand-lg top-0 w-100">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid" id="logo"
-          srcset="" width="100"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    <div class="container">
+      <a class="navbar-brand" href="#carouselExampleCaptions" id="logoImage"><img src="assets/images/logo.png"
+          alt="logo" class="img-fluid" id="logo" srcset="" width="100"></a>
+      <button class="navbar-toggler border-light border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-list text-light fs-1"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav w-100 mx-auto mb-2 mb-lg-0 justify-content-around">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
           <li class="nav-item">
-            <a class="nav-link orangeColor active" aria-current="page" href="#carouselExampleCaptions"><i class="bi bi-dot"></i> Home</a>
+            <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
+              href="#carouselExampleCaptions"><i class="bi bi-circle"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link orangeColor" href="#about"><i class="bi bi-dot"></i> About</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="#about"><i class="bi bi-circle"></i> About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link orangeColor" href="#services"><i class="bi bi-dot"></i> Services</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="#services"><i class="bi bi-circle"></i>
+              Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link orangeColor" href="#"><i class="bi bi-dot"></i> Portfolio</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="#"><i class="bi bi-circle"></i> Portfolio</a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link orangeColor" href="#carouselExampleCaptions" id="arrowUp"><i class="bi bi-arrow-up"></i></a>
-          </li>
-
         </ul>
       </div>
     </div>
   </nav>
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators gap-1">
+    <div class="carousel-indicators gap-4">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -69,26 +68,41 @@
         aria-label="Slide 3"></button>
       <!-- <img src="assets/images/pause-circle.svg" class="pointer" id="pause-play" alt="carousel"> -->
     </div>
-    <div class="carousel-inner ">
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h1>
+            <span class="orangeColor">First slide label</span>
+            <br>
+            <span class="bg-costum text-light p-2 lh-lg">Some representative placeholder content.</span>
+            <br>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel deleniti</span>
+          </h1>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <h1>
+            <span class="orangeColor">Second slide label</span>
+            <br>
+            <span class="bg-costum text-light p-2 lh-lg">Some representative placeholder content.</span>
+            <br>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel deleniti</span>
+          </h1>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h1>
+            <span class="orangeColor">Third slide label</span>
+            <br>
+            <span class="bg-costum text-light p-2 lh-lg">Some representative placeholder content.</span>
+            <br>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel deleniti</span>
+          </h1>
         </div>
       </div>
     </div>
@@ -118,16 +132,16 @@
     <div class="container capability mb-5">
       <div class="links position-relative w-100">
         <div class="d-flex flex-column align-items-lg-center">
-          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
-            class="active forLinkC pointer py-2 pe-5 w-fit" aria-current="true" aria-label="Slide 1">Subtitle 1</div>
-          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"
-            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 2</div>
-          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"
-            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 3</div>
-          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"
-            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 4</div>
-          <div data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5"
-            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 5</div>
+          <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+            class="active forLinkC pointer py-2 pe-5 w-fit" aria-current="true" aria-label="Slide 1">Subtitle 1</h3>
+          <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 2</h3>
+          <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 3</h3>
+          <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 4</h3>
+          <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5"
+            class="forLinkC pointer py-2 pe-5 w-fit">Subtitle 5</h3>
         </div>
       </div>
 
