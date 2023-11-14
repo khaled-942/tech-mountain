@@ -1,23 +1,35 @@
 @font-face {
-  font-family: 'header';
+  font-family: "header";
   src: url(../assets/fonts/header.ttf);
 }
 
 @font-face {
-  font-family: 'body';
+  font-family: "body";
   src: url(../assets/fonts/body.ttf);
 }
 
 body {
-  font-family: 'body';
+  font-family: "body";
 }
 
-h1 {
+.header-car {
   font-family: header;
 }
-
-.navbar {
+.before {
   z-index: 9;
+}
+.revRotate {
+  left: 50%;
+  transform: translate(-40%, 49%);
+}
+.revRotate:hover {
+  color: #f6a610 !important;
+}
+.beforeRotate{
+  transform: rotate(180deg);
+}
+.navbar {
+  z-index: 10;
   position: fixed !important;
   transition-duration: 0.5s;
 }
@@ -116,6 +128,12 @@ h1 {
   gap: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .header-car {
+    font-size: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .capability {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -130,7 +148,7 @@ h1 {
     position: sticky !important;
     background-color: #000 !important;
   }
-  
+
   div#navbarSupportedContent {
     background-color: #444;
     padding: 0 16px;
@@ -220,7 +238,7 @@ h1 {
   justify-content: center;
   position: relative;
 }
-.toTop{
+.toTop {
   padding: 8px 13px;
 }
 #logoImage {
@@ -233,4 +251,7 @@ h1 {
 
 .hidden-buttons {
   display: none;
+}
+.gallery .navbar{
+  position: sticky !important;
 }
