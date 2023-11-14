@@ -21,7 +21,6 @@
       <i class="bi bi-facebook pointer share" style="background-color:#3F51B5 ;"></i>
       <i class="bi bi-instagram pointer share" style="background-color:#F44336 ;"></i>
       <i class="bi bi-twitter pointer share" style="background-color:#03A9F4 ;"></i>
-      <i class="bi bi-pinterest pointer share" style="background-color: #E60023;"></i>
       <i class="bi bi-linkedin pointer share" style="background-color: #007BB6;"></i>
     </div>
     <i class="bi bi-share-fill share"></i>
@@ -31,15 +30,15 @@
 
   <nav id="nav" class="navbar navbar-expand-lg top-0 w-100">
     <div class="container">
-      <a class="navbar-brand" href="#carouselExampleCaptions" id="logoImage"><img src="assets/images/logo.png"
-          alt="logo" class="img-fluid" id="logo" srcset="" width="100"></a>
+      <a class="navbar-brand" href="#carouselExampleCaptions" id="logoImage">
+        <img src="assets/images/logo.png" alt="logo" class="img-fluid" id="logo" srcset="" width="100"></a>
       <button class="navbar-toggler border-light border" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <i class="bi bi-list text-light fs-1"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
               href="#carouselExampleCaptions"><i class="bi bi-circle"></i> Home</a>
@@ -52,7 +51,8 @@
               Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center gap-2" href="pages/gallery.html"><i class="bi bi-circle"></i> Portfolio</a>
+            <a class="nav-link d-flex align-items-center gap-2" href="pages/gallery.html"><i class="bi bi-circle"></i>
+              Portfolio</a>
           </li>
         </ul>
       </div>
@@ -338,16 +338,32 @@
   </div>
 
   <footer>
-    <div class="bg-dark text-white text-center py-3">
+    <div class="bg-dark text-white text-center py-3 d-flex flex-column gap-4">
       <div class="social d-flex gap-3 align-items-center justify-content-center">
         <i class="bi bi-facebook orangeColor pointer"></i>
         <i class="bi bi-twitter orangeColor pointer"></i>
         <i class="bi bi-instagram orangeColor pointer"></i>
-        <i class="bi bi-pinterest orangeColor pointer"></i>
         <i class="bi bi-linkedin orangeColor pointer"></i>
       </div>
-      <br>
-      &copy;Tech 2023 <span class="orangeColor">Policy & Privacy</span>
+      <ul class="d-flex gap-3 listStyle justify-content-center mb-0">
+        <li>
+          <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
+            href="../index.html#carouselExampleCaptions">Home</a>
+        </li>
+        <li>
+          <a class="nav-link d-flex align-items-center gap-2" href="../index.html#about">
+            About</a>
+        </li>
+        <li>
+          <a class="nav-link d-flex align-items-center gap-2" href="../index.html#services">
+            Services</a>
+        </li>
+        <li>
+          <a class="nav-link d-flex align-items-center gap-2" href="#portfolio">
+            Portfolio</a>
+        </li>
+      </ul>
+      <div>&copy;Tech 2023 <span class="orangeColor">Policy & Privacy</span></div>
     </div>
   </footer>
 

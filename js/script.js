@@ -22,14 +22,12 @@ $(".forLinkC").on("click", (e) => {
 function detect() {
   if (window.scrollY == 0) {
     $("#nav").css("background-color", "transparent");
-    // $("#logo").attr("src", "assets/images/logo.png")
-    $("#logoImage").css('transform','scale(1)');
+    $("#logo").css('max-width','100%');
     $('#arrowUp').addClass('d-none');
     $('#nav').addClass('position-sticky').removeClass('position-fixed');
   } else {
     $("#nav").css("background-color", "black");
-    // $("#logo").attr("src", "assets/images/logo2.png");
-    $("#logoImage").css('transform','scale(0.7)');
+    $("#logo").css('max-width','50%');
     $('#arrowUp').removeClass('d-none');
     $('#nav').removeClass('position-sticky').addClass('position-fixed');
   }
