@@ -38,3 +38,7 @@ $(document).on("scroll", detect);
 $(document).on("click", (e) => {
   $(".navbar-collapse").removeClass("show");
 });
+$('.nav-link').on("click", (e) => {
+  $('.nav-link').removeClass('active');
+  $(e.target).addClass("active");
+});

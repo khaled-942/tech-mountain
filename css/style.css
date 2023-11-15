@@ -304,4 +304,5 @@ footer li:hover,
 }
 .addAnimation:hover{
   transform: scale(1.05);
+  border-color: #875d4e !important;
 }
