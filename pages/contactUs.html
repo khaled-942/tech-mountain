@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link href="../css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gallery</title>
+</head>
+
+<body class="gallery">
+    <div class="buttons position-fixed text-light fs-4 bottom-0 mb-3 ms-3 pointer">
+        <div class="hidden-buttons flex-column gap-2 mb-3">
+            <i class="bi bi-whatsapp pointer share" style="background-color: #00E676;"></i>
+            <i class="bi bi-facebook pointer share" style="background-color:#3F51B5 ;"></i>
+            <i class="bi bi-instagram pointer share" style="background-color:#F44336 ;"></i>
+            <i class="bi bi-twitter pointer share" style="background-color:#03A9F4 ;"></i>
+            <i class="bi bi-linkedin pointer share" style="background-color: #007BB6;"></i>
+        </div>
+        <i class="bi bi-share-fill share"></i>
+    </div>
+    <a class="nav-link orangeColor pointer position-fixed bottom-0 mb-3 me-3 toTop end-0"
+        href="../index.html#carouselExampleCaptions" id="arrowUp"><i class="text-light fs-4 bi bi-arrow-up"></i></a>
+
+    <nav id="nav" class="navbar navbar-expand-lg top-0 w-100">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" id="logoImage"><img src="../assets/images/logo.png" alt="logo"
+                    class="img-fluid" id="logo" srcset="" width="100"></a>
+            <button class="navbar-toggler border-light border" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list text-light fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" aria-current="page"
+                            href="../index.html#carouselExampleCaptions"><i class="bi bi-circle"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="../index.html#about"><i
+                                class="bi bi-circle"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="../index.html#services"><i
+                                class="bi bi-circle"></i>
+                            Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="gallery.html"><i
+                                class="bi bi-circle"></i>
+                            Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2 active" href="#portfolio"><i
+                                class="bi bi-circle"></i>
+                            Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="portfolio" class="portfolio w-100">
+        <div class="section-title text-center mb-3 vh-50" id="mainSection">
+            <!-- <img src="../assets/images/1.jpg" alt="" srcset=""> -->
+            <div class="text-start container">
+                <h1>Contact Us</h1>
+                <br>
+                <h4><a href="../index.html" class="text-reset text-decoration-none ref">Tech Mountains</a> <i
+                        class="bi bi-caret-right-fill"></i> <span class="orangeColor">Contact Us</span></h4>
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up">
+            <div class="contact py-4">
+                <div class="informations d-flex flex-column gap-3">
+                    <div>
+                        <h3>Address</h3>
+                        <p></p>
+                        <p class="d-flex flex-column gap-3">
+                            <span>the place,</span>
+                            <span>street,</span>
+                            <span>Area,</span>
+                            <span>Building Number.</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Touch</h3>
+                        <p></p>
+                        <p class="d-flex flex-column gap-3">
+                            <span><i class="bi bi-phone"></i> +999999999</span>
+                            <span><i class="bi bi-telephone-fill"></i> +88888888</span>
+                            <span><i class="bi bi-envelope-at-fill"></i> info@info.com</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Business</h3>
+                        <p></p>
+                        <p class="d-flex flex-column gap-3">
+                            <span><i class="bi bi-clock-history"></i> Monday - Friday - 10am to 7pm</span>
+                            <span><i class="bi bi-clock-history"></i> Saturday - Sunday - Closed</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form bg-secondary2 p-3 rounded">
+                    <div class="row">
+                        <div class="col-11 m-auto">
+                            <h3>Quick Contact</h3>
+                            <form action="../send_email.php" method="post" role="form" class="php-email-form checkoutForm"
+                                id="checkoutForm">
+                                <div class="form-group mt-3">
+                                    <input type="text" name="fname" class="form-control" id="fname"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" name="lname" class="form-control" id="lname"
+                                        placeholder="Last Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="phone" class="form-control" name="phone" id="phone"
+                                        placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" class="form-control" cols="30"
+                                        rows="10"></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading hide text-center w-100">
+                                        <div class="spinner-border text-warning" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                    <div class="error-message invisible position-absolute"></div>
+                                    <div class="sent-message invisible position-absolute">Your message has
+                                        been sent. Thank you!</div>
+                                    <div class="ourMessage hide">Your message has been sent. Thank you!
+                                    </div>
+                                    <div class="ourError hide">Error!</div>
+                                </div>
+                                <dic class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-success d-block w-100 text-white"
+                                        id="checkoutBtn">Submit</button>
+                                    <!-- <button class="btn btn-danger d-block w-100 text-white">Reset</button> -->
+                                </dic>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-dark text-white text-center py-5 d-flex flex-column gap-4">
+            <div class="social d-flex gap-3 align-items-center justify-content-center">
+                <i class="bi bi-facebook orangeColor pointer"></i>
+                <i class="bi bi-twitter orangeColor pointer"></i>
+                <i class="bi bi-instagram orangeColor pointer"></i>
+                <i class="bi bi-linkedin orangeColor pointer"></i>
+            </div>
+
+            <ul class="d-flex gap-3 listStyle justify-content-center mb-0">
+                <li>
+                    <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
+                        href="../index.html#carouselExampleCaptions">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex align-items-center gap-2" href="../index.html#about">
+                        About</a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex align-items-center gap-2" href="../index.html#services">
+                        Services</a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex align-items-center gap-2" href="gallery.html">
+                        Portfolio</a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex align-items-center gap-2" href="#portfolio">
+                        Contact Us</a>
+                </li>
+            </ul>
+
+            <div>&copy;Tech Mountains 2023 <span class="orangeColor">Policy & Privacy</span></div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/needsgallery.js"></script>
+    <script src="../slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

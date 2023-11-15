@@ -156,7 +156,9 @@ body {
     justify-items: center;
     align-items: center;
   }
-
+  .contact{
+    grid-template-columns: repeat(1,1fr) !important;
+  }
   #nav {
     position: sticky !important;
     background-color: #000 !important;
@@ -283,4 +285,17 @@ footer li:hover,
 }
 .vh-50 {
   height: 50vh;
+}
+.contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.hide {
+  display: none;
+}
+.bg-secondary2{
+  background-color: #F3F4F5 !important;
+}
+.laptop{
+  border: 5px solid black !important;
 }
