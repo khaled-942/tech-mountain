@@ -1,3 +1,8 @@
+document.onreadystatechange = () => {
+  if (document.readyState === "complete") {
+    document.getElementById("loader").style.display = "none";
+  }
+};
 $(".autoplay").slick({
   slidesToShow: 6,
   slidesToScroll: 1,

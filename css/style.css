@@ -156,8 +156,8 @@ body {
     justify-items: center;
     align-items: center;
   }
-  .contact{
-    grid-template-columns: repeat(1,1fr) !important;
+  .contact {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
   #nav {
     position: sticky !important;
@@ -174,7 +174,8 @@ body {
   color: white !important;
 }
 
-#nav .nav-link:hover, #nav .nav-link.active {
+#nav .nav-link:hover,
+#nav .nav-link.active {
   color: #f6a610 !important;
 }
 
@@ -286,23 +287,23 @@ footer li:hover,
 .vh-50 {
   height: 50vh;
 }
-.contact{
+.contact {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .hide {
   display: none;
 }
-.bg-secondary2{
-  background-color: #F3F4F5 !important;
+.bg-secondary2 {
+  background-color: #f3f4f5 !important;
 }
-.laptop{
+.laptop {
   border: 5px solid black !important;
 }
-.addAnimation{
+.addAnimation {
   transition-duration: 0.5s;
 }
-.addAnimation:hover{
+.addAnimation:hover {
   transform: scale(1.05);
   border-color: #212529 !important;
 }
@@ -319,4 +320,14 @@ footer li:hover,
 
 ::-webkit-scrollbar-corner {
   background: #212529;
+}
+
+#loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../assets/images/6.gif) 50% 50% no-repeat #fff;
 }
