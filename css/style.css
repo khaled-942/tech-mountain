@@ -299,3 +299,9 @@ footer li:hover,
 .laptop{
   border: 5px solid black !important;
 }
+.addAnimation{
+  transition-duration: 0.5s;
+}
+.addAnimation:hover{
+  transform: scale(1.05);
+}
