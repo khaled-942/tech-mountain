@@ -265,9 +265,7 @@ body {
 .hidden-buttons {
   display: none;
 }
-.gallery .navbar {
-  position: sticky !important;
-}
+
 footer li {
   margin-bottom: 0 !important;
 }
@@ -284,5 +282,5 @@ footer li:hover,
   color: white;
 }
 .vh-50 {
-  height: 25vh;
+  height: 35vh;
 }
