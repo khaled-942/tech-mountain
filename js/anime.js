@@ -1,6 +1,6 @@
 const scrollElements = [...document.querySelectorAll(".anime")];
 const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top - 250;
+  const elementTop = el.getBoundingClientRect().top - 100;
 
   return (
     elementTop <=
@@ -9,7 +9,7 @@ const elementInView = (el, dividend = 1) => {
 };
 
 const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top - 250;
+  const elementTop = el.getBoundingClientRect().top - 100;
 
   return (
     elementTop > (window.innerHeight || document.documentElement.clientHeight)
