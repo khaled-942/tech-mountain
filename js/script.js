@@ -1,6 +1,7 @@
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
     document.getElementById("loader").style.display = "none";
+    document.getElementById("body").style.overflow = "unset";
   }
 };
 $(".autoplay").slick({

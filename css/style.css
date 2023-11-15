@@ -10,6 +10,7 @@
 
 body {
   font-family: "body";
+  overflow: hidden;
 }
 
 .header-car {
