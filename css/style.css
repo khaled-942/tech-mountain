@@ -172,7 +172,7 @@ body {
   color: white !important;
 }
 
-#nav .nav-link:hover {
+#nav .nav-link:hover, #nav .nav-link.active {
   color: #f6a610 !important;
 }
 
@@ -282,5 +282,5 @@ footer li:hover,
   color: white;
 }
 .vh-50 {
-  height: 35vh;
+  height: 50vh;
 }

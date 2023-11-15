@@ -1,0 +1,64 @@
+.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.fade-in-bottom {
+    position: relative;
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.slide-left {
+    position: relative;
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.slide-right {
+    position: relative;
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    left: -150px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    left: 150px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    top: 150px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
