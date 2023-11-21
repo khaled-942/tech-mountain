@@ -172,7 +172,7 @@ body {
 }
 
 #nav .nav-link {
-  color: white !important;
+  color: white;
 }
 
 #nav .nav-link:hover,
@@ -306,7 +306,7 @@ footer li:hover,
 }
 .addAnimation:hover {
   transform: scale(1.05);
-  border-color: #212529 !important;
+  /* border-color: #212529 !important; */
 }
 ::-webkit-scrollbar {
   height: 7px;
@@ -330,5 +330,15 @@ footer li:hover,
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../assets/images/6.gif) 50% 50% no-repeat #fff;
+  background: url(../assets/images/pre.png) 50% 50% no-repeat #fff;
+}
+.downloadBtn{
+  margin-right: 4.5rem!important;
+}
+.liInPro{
+  transition-duration: 0.3s;
+}
+.liInPro:hover{
+  color: #f6a610;
+  transform: translateX(10px);
 }
