@@ -402,7 +402,7 @@ hr::before,
   background-color: orangered;
 }
 .editB::before {
-  background-color: transparent;
+  bottom: -1px;
 }
 h5 {
   font-size: 1.6rem;
