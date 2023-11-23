@@ -22,10 +22,15 @@ body {
 }
 
 .header-car {
-  font-family: "header";
+  font-family: "bebas";
 }
 
-.bebas,h1,h2,h3,h4,h5 {
+.bebas,
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "bebas";
 }
 
@@ -161,7 +166,7 @@ body {
     font-size: 2.5rem;
   }
 }
-.specFont{
+.specFont {
   font-size: 5rem;
 }
 @media screen and (max-width: 768px) {
@@ -190,7 +195,7 @@ body {
 #nav .nav-link {
   color: white;
 }
-.nav-link{
+.nav-link {
   font-family: bebas;
   font-size: 1.25rem;
 }
@@ -380,20 +385,25 @@ footer li:hover,
   margin-bottom: 0rem !important;
   line-height: 2rem;
 }
-hr::before, .onlyDeff::before,.editB::before{
+hr::before,
+.onlyDeff::before,
+.editB::before {
   width: 28px;
-    height: 5px;
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    margin-left: -14px;
-    background-color: #f6a610;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #f6a610;
 }
-.onlyDeff::before{
+.onlyDeff::before {
   background-color: orangered;
 }
-.editB::before{
+.editB::before {
   background-color: transparent;
+}
+h5 {
+  font-size: 1.6rem;
 }
