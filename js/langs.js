@@ -21,7 +21,7 @@ let swithLangArObject = {
 
   Portfolio: {
     0: "PORTFOLIO",
-    1: "اعمالنا السابقة",
+    1: "اعمالنا السابقه",
   },
 
   Contact: {
