@@ -7,14 +7,26 @@
   font-family: "header";
   src: url(../assets/fonts/header.ttf);
 }
+@font-face {
+  font-family: "bebas";
+  src: url(../assets/fonts/bebas.ttf);
+}
+@font-face {
+  font-family: "openSans";
+  src: url(../assets/fonts/openSans.ttf);
+}
 
 body {
-  font-family: "body";
+  font-family: "openSans";
   overflow: hidden;
 }
 
 .header-car {
   font-family: "header";
+}
+
+.bebas,h1,h2,h3,h4,h5 {
+  font-family: "bebas";
 }
 
 .before {
@@ -31,7 +43,7 @@ body {
   transform: rotate(180deg);
 }
 .navbar {
-  z-index: 10;
+  z-index: 152;
   position: fixed !important;
   transition-duration: 0.5s;
 }
@@ -149,7 +161,9 @@ body {
     font-size: 2.5rem;
   }
 }
-
+.specFont{
+  font-size: 5rem;
+}
 @media screen and (max-width: 768px) {
   .capability {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -175,6 +189,10 @@ body {
 
 #nav .nav-link {
   color: white;
+}
+.nav-link{
+  font-family: bebas;
+  font-size: 1.25rem;
 }
 
 #nav .nav-link:hover,
@@ -290,7 +308,7 @@ footer li:hover,
 .vh-60 {
   height: 60vh;
 }
-.overlay{
+.overlay {
   width: 100%;
   height: 100%;
   top: 0;
@@ -300,7 +318,7 @@ footer li:hover,
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.forZI{
+.forZI {
   z-index: 3;
 }
 .contact {
@@ -347,16 +365,35 @@ footer li:hover,
   z-index: 9999;
   background: url(../assets/images/pre.png) 50% 50% no-repeat #fff;
 }
-.downloadBtn{
-  margin-right: 4.5rem!important;
+.downloadBtn {
+  margin-right: 4.5rem !important;
 }
-.liInPro{
+.liInPro {
   transition-duration: 0.3s;
 }
-.liInPro:hover{
+.liInPro:hover {
   color: #f6a610;
   transform: translateX(10px);
 }
-.projects li{
+.projects li {
   justify-content: start !important;
+  margin-bottom: 0rem !important;
+  line-height: 2rem;
+}
+hr::before, .onlyDeff::before,.editB::before{
+  width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #f6a610;
+}
+.onlyDeff::before{
+  background-color: orangered;
+}
+.editB::before{
+  bottom: 115px;
 }
