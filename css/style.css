@@ -41,7 +41,7 @@ h5 {
   left: 50%;
   transform: translate(-40%, 49%);
 }
-.revRotate:hover {
+.revRotate:hover,.useFullLinks:hover {
   color: #f6a610 !important;
 }
 .beforeRotate {
@@ -285,6 +285,9 @@ h5 {
 }
 #logo {
   transition-duration: 0.5s;
+}
+.useFullLinks{
+  transition-duration: 0.3s;
 }
 
 .buttons {
