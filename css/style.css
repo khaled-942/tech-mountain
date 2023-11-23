@@ -395,5 +395,5 @@ hr::before, .onlyDeff::before,.editB::before{
   background-color: orangered;
 }
 .editB::before{
-  bottom: 115px;
+  background-color: transparent;
 }
