@@ -1,7 +1,7 @@
 let swithLangArObject = {
   Home: {
     0: "HOME",
-    1: "الصفحة الرئيسية",
+    1: "الرئيسية",
   },
 
   About: {
@@ -16,16 +16,16 @@ let swithLangArObject = {
 
   Projects: {
     0: "PROJECTS",
-    1: "المشاريع",
+    1: "المشروعات",
   },
 
   Portfolio: {
     0: "PORTFOLIO",
-    1: "المعرض",
+    1: "اعمالنا السابقة",
   },
 
   Contact: {
     0: "CONTACT US",
-    1: "للاتصال بنا",
+    1: "اتصل بنا",
   },
 };
