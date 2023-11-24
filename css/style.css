@@ -247,6 +247,10 @@ button#buttonSmall {
   #footerDiv {
     padding-bottom: 4rem !important;
   }
+
+  .specFont {
+    font-size: 3rem;
+  }
 }
 
 .listStyle li {
