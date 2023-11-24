@@ -182,8 +182,6 @@ h5 {
   #nav .nav-link {
     color: white !important;
   }
-}
-@media screen and (max-width: 768px) {
   .capability {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-areas:
@@ -192,6 +190,8 @@ h5 {
     justify-items: center;
     align-items: center;
   }
+}
+@media screen and (max-width: 768px) {
   .contact {
     grid-template-columns: repeat(1, 1fr) !important;
   }
