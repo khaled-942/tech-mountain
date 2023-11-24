@@ -135,6 +135,9 @@ h5 {
 .w-fit {
   width: fit-content;
 }
+.w-max{
+  width: max-content;
+}
 
 .links {
   grid-area: links;
@@ -220,6 +223,9 @@ h5 {
       "screen";
     justify-items: center;
     align-items: center;
+  }
+  #footerDiv{
+    padding-bottom: 4rem !important;
   }
 }
 

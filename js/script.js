@@ -44,7 +44,6 @@ function detect() {
     $(".nav-item a").addClass("text-dark");
     $("#buttonSmall").removeClass("border-light").addClass('border-dark');
     $("#buttonSmall i").removeClass("text-light").addClass('text-dark');
-    $(".navbar-collapse").removeClass("show");
     $("#logo").attr("src", "../assets/images/logo.png");
     $("#logo").css("max-width", "50%");
     $("#arrowUp").removeClass("d-none");
@@ -53,6 +52,9 @@ function detect() {
 }
 detect();
 $(document).on("scroll", detect);
+$(document).on("touchmove", ()=>{
+  $(".navbar-collapse").removeClass("show");
+});
 $(document).on("click", (e) => {
   $(".navbar-collapse").removeClass("show");
 });
