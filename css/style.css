@@ -411,3 +411,6 @@ hr::before,
 h5 {
   font-size: 1.6rem;
 }
+.bg-light-custom{
+  background-color: #dcd0d0;
+}
