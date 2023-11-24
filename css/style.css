@@ -422,8 +422,18 @@ footer li:hover,
   background-size: 10%;
 }
 
-.downloadBtn {
-  margin-right: 4.5rem !important;
+#Download{
+  position: relative;
+  animation: upDown 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes upDown {
+  from{
+    top: -5px;
+  }
+  to{
+    top: 5px;
+  }
 }
 
 .liInPro {
