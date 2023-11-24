@@ -29,6 +29,7 @@ function detect() {
   if (window.scrollY == 0) {
     $("#nav").css("background-color", "transparent");
     $(".nav-item a").removeClass("text-dark");
+    $("#logo").attr("src", "assets/images/logo1.png");
     $("#logo").css("max-width", "100%");
     $("#arrowUp").addClass("d-none");
     $("#nav").addClass("position-sticky").removeClass("position-fixed");
@@ -36,6 +37,7 @@ function detect() {
     $("#nav").css("background-color", "white");
     $(".nav-item a").addClass("text-dark");
     // $(".navbar-collapse").removeClass("show");
+    $("#logo").attr("src", "assets/images/logo.png");
     $("#logo").css("max-width", "50%");
     $("#arrowUp").removeClass("d-none");
     $("#nav").removeClass("position-sticky").addClass("position-fixed");
