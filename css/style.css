@@ -169,18 +169,7 @@ h5 {
 .specFont {
   font-size: 5rem;
 }
-@media screen and (max-width: 768px) {
-  .capability {
-    grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas:
-      "links text"
-      "screen screen";
-    justify-items: center;
-    align-items: center;
-  }
-  .contact {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
+@media screen and (max-width: 991.9px) {
   #nav {
     position: sticky !important;
     background-color: #000 !important;
@@ -192,6 +181,19 @@ h5 {
   }
   #nav .nav-link {
     color: white !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .capability {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas:
+      "links text"
+      "screen screen";
+    justify-items: center;
+    align-items: center;
+  }
+  .contact {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 
