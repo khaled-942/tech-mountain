@@ -3,7 +3,7 @@ document.onreadystatechange = () => {
     setTimeout(() => {
       document.getElementById("loader").style.display = "none";
       document.getElementById("body").style.overflow = "unset";
-    }, 5000);
+    }, 4000);
   }
 };
 $(".autoplay").slick({
