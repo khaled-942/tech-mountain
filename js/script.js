@@ -33,7 +33,7 @@ function detect() {
     $("#nav").attr('style', 'background-color: transparent');
     $(".nav-item a").removeClass("text-dark");
     $("#buttonSmall").removeClass("border-dark").addClass('border-light');
-    $("#buttonSmall i").removeClass("text-dark").addClass('text-light');
+    // $("#buttonSmall i").removeClass("text-dark").addClass('text-light');
     $("#logo").attr("src", "../assets/images/logo1.png");
     $("#logo").css("max-width", "100%");
     $("#arrowUp").addClass("d-none");
@@ -43,7 +43,7 @@ function detect() {
     $("#nav").attr('style', 'background-color: white !important');
     $(".nav-item a").addClass("text-dark");
     $("#buttonSmall").removeClass("border-light").addClass('border-dark');
-    $("#buttonSmall i").removeClass("text-light").addClass('text-dark');
+    // $("#buttonSmall i").removeClass("text-light").addClass('text-dark');
     $("#logo").attr("src", "../assets/images/logo.png");
     $("#logo").css("max-width", "50%");
     $("#arrowUp").removeClass("d-none");
