@@ -29,7 +29,7 @@ function detect() {
   if (window.scrollY == 0) {
     $("#nav").css("background-color", "transparent");
     $(".nav-item a").removeClass("text-dark");
-    $("#logo").attr("src", "assets/images/logo1.png");
+    $("#logo").attr("src", "../assets/images/logo1.png");
     $("#logo").css("max-width", "100%");
     $("#arrowUp").addClass("d-none");
     $("#nav").addClass("position-sticky").removeClass("position-fixed");
