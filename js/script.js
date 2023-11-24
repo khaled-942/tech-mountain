@@ -6,7 +6,7 @@ document.onreadystatechange = () => {
 };
 $(".autoplay").slick({
   slidesToShow: 6,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 1000,
   arrows: false,
