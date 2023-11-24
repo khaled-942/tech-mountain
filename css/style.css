@@ -190,10 +190,14 @@ h5 {
     background-color: #444;
     padding: 0 16px;
   }
+  #nav .nav-link {
+    color: white !important;
+  }
 }
 
 #nav .nav-link {
   color: white;
+  justify-content: center;
 }
 .nav-link {
   font-family: bebas;

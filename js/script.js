@@ -26,18 +26,25 @@ $(".forLinkC").on("click", (e) => {
   let x = Number($(e.target).attr("data-bs-slide-to"));
   $("#carouselExampleCaptions3").carousel(x);
 });
+
 function detect() {
   if (window.scrollY == 0) {
-    $("#nav").css("background-color", "transparent");
+    
+    $("#nav").attr('style', 'background-color: transparent');
     $(".nav-item a").removeClass("text-dark");
+    $("#buttonSmall").removeClass("border-dark").addClass('border-light');
+    $("#buttonSmall i").removeClass("text-dark").addClass('text-light');
     $("#logo").attr("src", "../assets/images/logo1.png");
     $("#logo").css("max-width", "100%");
     $("#arrowUp").addClass("d-none");
     $("#nav").addClass("position-sticky").removeClass("position-fixed");
   } else {
-    $("#nav").css("background-color", "white");
+    
+    $("#nav").attr('style', 'background-color: white !important');
     $(".nav-item a").addClass("text-dark");
-    // $(".navbar-collapse").removeClass("show");
+    $("#buttonSmall").removeClass("border-light").addClass('border-dark');
+    $("#buttonSmall i").removeClass("text-light").addClass('text-dark');
+    $(".navbar-collapse").removeClass("show");
     $("#logo").attr("src", "../assets/images/logo.png");
     $("#logo").css("max-width", "50%");
     $("#arrowUp").removeClass("d-none");
