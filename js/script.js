@@ -1,9 +1,7 @@
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("body").style.overflow = "unset";
-    }, 3500);
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("body").style.overflow = "unset";
   }
 };
 $(".autoplay").slick({
@@ -27,7 +25,6 @@ $(".forLinkC").on("click", (e) => {
   let x = Number($(e.target).attr("data-bs-slide-to"));
   $("#carouselExampleCaptions3").carousel(x);
 });
-
 function detect() {
   if (window.scrollY == 0) {
     $("#nav").css("background-color", "transparent");
