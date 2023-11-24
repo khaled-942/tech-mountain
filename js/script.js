@@ -37,7 +37,7 @@ function detect() {
     $("#nav").css("background-color", "white");
     $(".nav-item a").addClass("text-dark");
     // $(".navbar-collapse").removeClass("show");
-    $("#logo").attr("src", "assets/images/logo.png");
+    $("#logo").attr("src", "../assets/images/logo.png");
     $("#logo").css("max-width", "50%");
     $("#arrowUp").removeClass("d-none");
     $("#nav").removeClass("position-sticky").addClass("position-fixed");
