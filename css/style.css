@@ -426,16 +426,17 @@ footer li:hover,
   background-size: 10%;
 }
 
-#Download{
+#Download {
   position: relative;
   animation: upDown 0.6s ease-in-out infinite alternate;
 }
 
 @keyframes upDown {
-  from{
+  from {
     top: -5px;
   }
-  to{
+
+  to {
     top: 5px;
   }
 }
@@ -483,4 +484,9 @@ h5 {
 
 .bg-light-custom {
   background-color: #fff;
+}
+
+.newWidth {
+  max-width: 24rem;
+  width: fit-content;
 }
