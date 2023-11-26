@@ -19,16 +19,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["fname"]) && isset($_PO
     try {
         // Set SMTP configuration
         $mail->isSMTP();
-        $mail->Host = 'mail.gawad-apiaries.com'; // Replace with your SMTP server hostname
+        $mail->Host = ''; // Replace with your SMTP server hostname => 1
         $mail->SMTPAuth = true;
-        $mail->Username = 'khaled@gawad-apiaries.com'; // Replace with your SMTP username
-        $mail->Password = 'kh@led942'; // Replace with your SMTP password
+        $mail->Username = ''; // Replace with your SMTP username => 2
+        $mail->Password = ''; // Replace with your SMTP password => 3
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
         // Set sender and recipient
         $mail->setFrom($email, $fname . " " . $lname);
-        $mail->addAddress('khaled@gawad-apiaries.com');
+        $mail->addAddress(''); // Replace with your SMTP username => 4 like 2
 
         // Set email content
         $mail->Subject = "Tech Mountains";

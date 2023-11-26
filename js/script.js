@@ -33,7 +33,8 @@ function detect() {
     $("#nav").attr('style', 'background-color: transparent');
     $(".nav-item a").removeClass("text-dark");
     $("#buttonSmall").removeClass("border-dark").addClass('border-light');
-    $("#logo").attr("src", "../assets/images/logo1.png");
+    let startLogo = $("#logo").attr("top-logo");
+    $("#logo").attr("src", startLogo);
     $("#logo").css("max-width", "100%");
     $("#arrowUp").addClass("d-none");
     $("#nav").addClass("position-sticky").removeClass("position-fixed");
@@ -42,7 +43,8 @@ function detect() {
     $("#nav").attr('style', 'background-color: white !important');
     $(".nav-item a").addClass("text-dark");
     $("#buttonSmall").removeClass("border-light").addClass('border-dark');
-    $("#logo").attr("src", "../assets/images/logo.png");
+    let scrollLogo = $("#logo").attr("scroll-logo");
+    $("#logo").attr("src", scrollLogo);
     $("#logo").css("max-width", "50%");
     $("#arrowUp").removeClass("d-none");
     $("#nav").removeClass("position-sticky").addClass("position-fixed");
