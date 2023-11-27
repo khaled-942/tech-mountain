@@ -54,6 +54,7 @@ detect();
 $(document).on("scroll", detect);
 $(document).on("touchmove", ()=>{
   $(".navbar-collapse").removeClass("show");
+  $(".hidden-buttons").removeClass("d-flex");
 });
 $(document).on("click", (e) => {
   $(".navbar-collapse").removeClass("show");
