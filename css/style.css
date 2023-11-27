@@ -244,6 +244,15 @@ button#buttonSmall {
   color: #f6a610 !important;
 }
 
+@media screen and (min-width: 670px) and (max-width: 813px) {
+  .capability {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-areas:
+      "links text screen";
+    justify-items: start;
+    align-items: start;
+  }
+}
 @media screen and (max-width: 480px) {
   .capability {
     grid-template-columns: repeat(1, 1fr) !important;
