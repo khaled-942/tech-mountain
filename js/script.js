@@ -12,7 +12,7 @@ $(".autoplay").slick({
   autoplaySpeed: 1000,
   arrows: false,
 });
-$(".share").on("mouseenter", (e) => {
+$(".share").on("mouseenter click", (e) => {
   $(".hidden-buttons").addClass("d-flex");
 });
 $(".buttons").on("mouseleave", (e) => {
@@ -29,7 +29,7 @@ $(".forLinkC").on("click", (e) => {
 
 function detect() {
   if (window.scrollY == 0) {
-    
+
     $("#nav").attr('style', 'background-color: transparent');
     $(".nav-item a").removeClass("text-dark");
     $("#buttonSmall").removeClass("border-dark").addClass('border-light');
@@ -39,7 +39,7 @@ function detect() {
     $("#arrowUp").addClass("d-none");
     $("#nav").addClass("position-sticky").removeClass("position-fixed");
   } else {
-    
+
     $("#nav").attr('style', 'background-color: white !important');
     $(".nav-item a").addClass("text-dark");
     $("#buttonSmall").removeClass("border-light").addClass('border-dark');
@@ -52,7 +52,7 @@ function detect() {
 }
 detect();
 $(document).on("scroll", detect);
-$(document).on("touchmove", ()=>{
+$(document).on("touchmove", () => {
   $(".navbar-collapse").removeClass("show");
   $(".hidden-buttons").removeClass("d-flex");
 });

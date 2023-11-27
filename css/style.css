@@ -175,6 +175,9 @@ button#buttonSmall {
     width: 50% !important;
     height: auto !important;
   }
+  #loader {
+    background-size: 23% !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -215,6 +218,14 @@ button#buttonSmall {
 @media screen and (max-width: 768px) {
   .contact {
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+  #loader {
+    background-size: 35% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .laptop{
+    display: none;
   }
 }
 
