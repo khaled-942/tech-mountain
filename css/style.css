@@ -106,12 +106,12 @@ h5 {
 }
 
 .carousel-caption {
-  transform: translate(-25%, 50%);
+  transform: translate(-12%, 50%);
   bottom: 50%;
   right: unset;
   text-align: start;
-  left: 18%;
-  z-index: 99;
+  left: 12%;
+  z-index: 2;
 }
 
 .play-pause {
@@ -222,6 +222,9 @@ button#buttonSmall {
   #loader {
     background-size: 35% !important;
   }
+  .specFont {
+    font-size: 3rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .laptop {
@@ -268,7 +271,7 @@ button#buttonSmall {
   }
 
   .specFont {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
