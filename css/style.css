@@ -224,7 +224,7 @@ button#buttonSmall {
   }
 }
 @media screen and (max-width: 767px) {
-  .laptop{
+  .laptop {
     display: none;
   }
 }
@@ -247,8 +247,7 @@ button#buttonSmall {
 @media screen and (min-width: 670px) and (max-width: 813px) {
   .capability {
     grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-areas:
-      "links text screen";
+    grid-template-areas: "links text screen";
     justify-items: start;
     align-items: start;
   }
@@ -509,4 +508,14 @@ h5 {
 .newWidth {
   max-width: 24rem;
   width: fit-content;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.projectImgs {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
 }
