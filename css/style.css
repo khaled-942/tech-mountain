@@ -688,3 +688,6 @@ h5 {
 .text-dark.spec:hover {
   color: white !important;
 }
+.customBtn{
+  background-color: #f6a610 !important;
+}
