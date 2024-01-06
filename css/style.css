@@ -106,11 +106,10 @@ h5 {
 }
 
 .carousel-caption {
-  transform: translate(-12%, 50%);
-  bottom: 50%;
+  bottom: 25%;
   right: unset;
   text-align: start;
-  left: 12%;
+  left: 6.2%;
   z-index: 2;
 }
 
@@ -134,7 +133,8 @@ button#buttonSmall {
 
 .orangeColor,
 .orangeColor:hover,
-.orangeColor.active {
+.orangeColor.active,
+.text-dark.social:hover {
   color: #f6a610 !important;
 }
 
@@ -315,16 +315,15 @@ button#buttonSmall {
   background-color: #f6a610;
 }
 
-.social i.orangeColor {
+.text-dark.social {
   padding: 5px 10px;
-  border: 2px solid #f6a610;
+  border: 1px solid #000;
   border-radius: 50%;
   transition-duration: 0.5s;
 }
 
-.social i.orangeColor:hover {
-  color: white !important;
-  background-color: #f6a610;
+.text-dark.social:hover {
+  border-color: #f6a610;
 }
 
 .buttons i,
@@ -521,4 +520,110 @@ h5 {
   width: 100%;
   /* aspect-ratio: 1;
   object-fit: cover; */
+}
+
+.typing::after {
+  content: "";
+  animation: text1 1s 1s ease-in-out 1 forwards;
+}
+.typing2::after {
+  content: "";
+  animation: text2 1s 2s ease-in-out 1 forwards;
+}
+.typing3::after {
+  content: "";
+  animation: text3 1s 3s ease-in-out 1 forwards;
+}
+
+@keyframes text1 {
+  10% {
+    content: "";
+  }
+  20% {
+    content: "M";
+  }
+  30% {
+    content: "MO";
+  }
+  40% {
+    content: "MOU";
+  }
+  50% {
+    content: "MOUN";
+  }
+  60% {
+    content: "MOUNT";
+  }
+  70% {
+    content: "MOUNTA";
+  }
+  80% {
+    content: "MOUNTAI";
+  }
+  90% {
+    content: "MOUNTAIN";
+  }
+  100% {
+    content: "MOUNTAINS";
+  }
+}
+
+@keyframes text2 {
+  0% {
+    content: "";
+  }
+  20% {
+    content: "M";
+  }
+  30% {
+    content: "MO";
+  }
+  40% {
+    content: "MOV";
+  }
+  50% {
+    content: "MOVI";
+  }
+  60% {
+    content: "MOVIN";
+  }
+  100% {
+    content: "MOVING";
+  }
+}
+
+@keyframes text3 {
+  0% {
+    content: "";
+  }
+  10% {
+    content: "M";
+  }
+  20% {
+    content: "MO";
+  }
+  30% {
+    content: "MOU";
+  }
+  40% {
+    content: "MOUN";
+  }
+  50% {
+    content: "MOUNT";
+  }
+  60% {
+    content: "MOUNTA";
+  }
+  70% {
+    content: "MOUNTAI";
+  }
+  80% {
+    content: "MOUNTAIN";
+  }
+  90% {
+    content: "MOUNTAINS";
+  }
+  100% {
+    content: "MOUNTAINS.";
+  }
 }

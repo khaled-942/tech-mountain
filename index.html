@@ -83,7 +83,7 @@
     class="scrollspy-example" tabindex="0">
     <!-- to make it slide do 1,2 -->
     <!-- 1 change data-bs-ride from (false) to => (carousel) -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="position-absolute overlay"></div>
 
       <div class="position-absolute w-100 bottom-0 text-light before text-center">
@@ -93,49 +93,55 @@
         <img src="assets/images/arrow.png" class="arrowImage" alt="" srcset="">
       </div>
       <!-- 2 remove hide -->
-      <div class="carousel-indicators gap-4 hide">
+      <div class="carousel-indicators gap-4">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="assets/images/first.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <p class="header-car">
+            <div class="header-car">
               <h1 class="specFont">
-                TECHNOLOGY <span class="orangeColor">MOUNTAINS <br></span> MOVING <span class="orangeColor">MOUNTAINS</span>.
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
               </h1>
-            </p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/images/second.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <p class="header-car">
-              <span class="orangeColor slide-right2">Second slide label</span>
-              <br>
-              <span class="bg-costum text-light p-2 lh-lg slide-left2">Some representative placeholder content.</span>
-              <br>
-              <span class="slide-left2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel deleniti</span>
-            </p>
+            <div class="header-car">
+              <h1 class="specFont">
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
+              </h1>
+            </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/images/third.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <p class="header-car">
-              <span class="orangeColor slide-left2">Third slide label</span>
-              <br>
-              <span class="bg-costum text-light p-2 lh-lg fade-in-bottom2">Some representative placeholder
-                content.</span>
-              <br>
-              <span class="fade-in-bottom2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel
-                deleniti</span>
-            </p>
+            <div class="header-car">
+              <h1 class="specFont">
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/images/fourth.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <div class="header-car">
+              <h1 class="specFont">
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
+              </h1>
+            </div>
           </div>
         </div>
       </div>
@@ -321,7 +327,7 @@
       </div>
     </div>
 
-    <div class="bg-dark text-center text-light py-4 position-relative" id="brands">
+    <div class="text-dark bg-white bg-dark text-center text-light py-4 position-relative" id="brands">
       <div class="position-absolute w-100 top-0 text-light before text-center beforeRotate">
         <a href="#brands">
           <i class="bi bi-caret-up-fill position-absolute revRotate text-muted pointer"></i>
@@ -351,28 +357,27 @@
         <img src="assets/images/brands/16.png" class="img-fluid" alt="" srcset="">
         <img src="assets/images/brands/17.png" class="img-fluid" alt="" srcset="">
         <img src="assets/images/brands/18.png" class="img-fluid" alt="" srcset="">
-        <img src="assets/images/brands/19.png" class="img-fluid" alt="" srcset="">
         <img src="assets/images/brands/20.png" class="img-fluid" alt="" srcset="">
       </div>
     </div>
   </div>
 
   <footer>
-    <div class="bg-dark text-white text-center pt-3 pb-5 d-flex flex-column gap-4" id="footerDiv">
+    <div class="text-dark bg-white text-center pt-3 pb-5 d-flex flex-column gap-4" id="footerDiv">
       <div class="social d-flex gap-3 align-items-center justify-content-center">
         <a href="https://api.whatsapp.com/send/?phone=96899044039&text&type=phone_number&app_absent=0"
           class="reset d-flex align-items-center justify-content-center text-decoration-none" target="_blank">
-          <i class="bi bi-whatsapp orangeColor pointer"></i>
+          <i class="bi bi-whatsapp text-dark social pointer"></i>
         </a>
 
         <a href="https://www.facebook.com/profile.php?id=100092986816267&mibextid=LQQJ4d"
           class="reset d-flex align-items-center justify-content-center text-decoration-none" target="_blank">
-          <i class="bi bi-facebook orangeColor pointer"></i>
+          <i class="bi bi-facebook text-dark social pointer"></i>
         </a>
 
         <a href="https://instagram.com/tech_mountains?igshid=NzZlODBkYWE4Ng=="
           class="reset d-flex align-items-center justify-content-center text-decoration-none" target="_blank">
-          <i class="bi bi-instagram orangeColor pointer"></i>
+          <i class="bi bi-instagram text-dark social pointer"></i>
         </a>
       </div>
       <ul class="d-flex flex-wrap gap-3 listStyle justify-content-center mb-0">
@@ -401,7 +406,7 @@
             Contact Us</a>
         </li>
       </ul>
-      <div class="orangeColor">&copy;Technology Mountains Trading & Investment LLC</div>
+      <div class="text-dark">&copy;Technology Mountains Trading & Investment LLC</div>
     </div>
   </footer>
 
