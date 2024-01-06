@@ -352,7 +352,7 @@ button#buttonSmall {
 }
 
 .buttons {
-  z-index: 9;
+  z-index: 99999999999999999;
 }
 
 .hidden-buttons {
