@@ -138,10 +138,10 @@ button#buttonSmall {
   color: #f6a610 !important;
 }
 
-.services {
+/* .services {
   background: url(../assets/images/2.jpg) no-repeat center center;
   background-size: cover;
-}
+} */
 
 .w-fit {
   width: fit-content;
@@ -515,6 +515,14 @@ h5 {
 .flex-1 {
   flex: 1;
 }
+@media screen and (max-width: 767px) {
+  .flex-1 {
+    flex: unset !important;
+  }
+  .revmobil{
+    flex-direction: column-reverse;
+  }
+}
 
 .projectImgs {
   width: 100%;
@@ -685,9 +693,10 @@ h5 {
   transform: scale(0.95);
 }
 
-.text-dark.spec:hover {
+.text-dark.spec:hover,
+.specArrow:hover {
   color: white !important;
 }
-.customBtn{
+.customBtn {
   background-color: #f6a610 !important;
 }

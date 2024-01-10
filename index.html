@@ -39,7 +39,8 @@
   <nav id="nav" class="navbar navbar-expand-lg top-0 w-100">
     <div class="container">
       <a class="navbar-brand" href="#carouselExampleCaptions" id="logoImage">
-        <img src="assets/images/logo1.png" top-logo="assets/images/logo1.png" scroll-logo="assets/images/logo.png" alt="logo" class="img-fluid" id="logo" srcset="" width="100"></a>
+        <img src="assets/images/logo1.png" top-logo="assets/images/logo1.png" scroll-logo="assets/images/logo.png"
+          alt="logo" class="img-fluid" id="logo" srcset="" width="100"></a>
       <button class="navbar-toggler border-custom border" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation" id="buttonSmall">
@@ -85,13 +86,6 @@
     <!-- 1 change data-bs-ride from (false) to => (carousel) -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="position-absolute overlay"></div>
-
-      <div class="position-absolute w-100 bottom-0 text-light before text-center">
-        <a href="#about">
-          <i class="bi bi-caret-down-fill position-absolute revRotate text-muted pointer"></i>
-        </a>
-        <img src="assets/images/arrow.png" class="arrowImage" alt="" srcset="">
-      </div>
       <!-- 2 remove hide -->
       <div class="carousel-indicators gap-4">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -100,8 +94,7 @@
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
+
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
@@ -109,7 +102,8 @@
           <div class="carousel-caption">
             <div class="header-car">
               <h1 class="specFont">
-                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span
+                  class="orangeColor typing3"></span>
               </h1>
             </div>
           </div>
@@ -119,27 +113,20 @@
           <div class="carousel-caption">
             <div class="header-car">
               <h1 class="specFont">
-                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span
+                  class="orangeColor typing3"></span>
               </h1>
             </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="assets/images/third.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption">
-            <div class="header-car">
-              <h1 class="specFont">
-                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
-              </h1>
-            </div>
-          </div>
-        </div>
+
         <div class="carousel-item" data-bs-interval="5000">
           <img src="assets/images/fourth.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
             <div class="header-car">
               <h1 class="specFont">
-                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span class="orangeColor typing3"></span>
+                TECHNOLOGY <span class="orangeColor typing"> </span><br> <span class="typing2">&hairsp;</span> <span
+                  class="orangeColor typing3"></span>
               </h1>
             </div>
           </div>
@@ -148,13 +135,19 @@
     </div>
 
     <div class="bg-light-custom">
-      <div class="text-center py-5 container" id="about">
+      <div class="text-center py-5 position-relative" id="about">
+        <div class="position-absolute w-100 top-0 text-light before text-center beforeRotate">
+          <a href="#about">
+            <i class="bi bi-caret-up-fill position-absolute revRotate text-dark specArrow pointer"></i>
+          </a>
+          <img src="assets/images/arrow.png" class="arrowImage" alt="" srcset="">
+        </div>
         <h2 class="d-inline-block mt-5 fade-in-bottom anime fw-bold position-relative">
           ABOUT US
           <hr class="border-custom border-1 border">
         </h2>
         <br>
-        <p class="fs-4">
+        <p class="fs-4 container">
           Technology Mountains is a group of individuals who share the same ambitions. Started from scratch into a
           reliable system integrator with a decent completed projects in Oman.
           <br>
@@ -170,36 +163,36 @@
     </div>
 
 
-    <div class="services text-center text-light py-5 position-relative" id="services">
+    <div class="services text-center text-light pt-5 pb-3  position-relative" id="services">
       <div class="position-absolute w-100 top-0 text-light before text-center beforeRotate">
         <a href="#services">
-          <i class="bi bi-caret-up-fill position-absolute revRotate text-muted pointer"></i>
+          <i class="bi bi-caret-up-fill position-absolute revRotate text-dark specArrow pointer"></i>
         </a>
         <img src="assets/images/arrow.png" class="arrowImage" alt="" srcset="">
       </div>
-      <h2 class="d-inline-block mt-5 fade-in-bottom anime fw-bold">
+      <h2 class="d-inline-block mt-5 fade-in-bottom anime fw-bold text-dark">
         SERVICES WE PROVIDE
         <hr class="border-custom border-1 border">
       </h2>
       <br>
-      <div class="container capability mb-5">
+      <div class="container capability mb-3">
         <div class="links position-relative w-100">
           <div class="d-flex flex-column">
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
-              class="active forLinkC pointer py-2 pe-5 w-fit" aria-current="true" aria-label="Slide 1">
+              class="active forLinkC text-dark pointer py-2 pe-5 w-fit" aria-current="true" aria-label="Slide 1">
               Structured Cabling</h3>
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"
-              class="forLinkC pointer py-2 pe-5 w-fit">Surveillance Systems</h3>
+              class="forLinkC text-dark pointer py-2 pe-5 w-fit">Surveillance Systems</h3>
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"
-              class="forLinkC pointer py-2 pe-5 w-fit">Access Control Systems</h3>
+              class="forLinkC text-dark pointer py-2 pe-5 w-fit">Access Control Systems</h3>
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"
-              class="forLinkC pointer py-2 pe-5 w-fit">Wireless Systems </h3>
+              class="forLinkC text-dark pointer py-2 pe-5 w-fit">Wireless Systems </h3>
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5"
-              class="forLinkC pointer py-2 pe-5 w-fit">Audio Visual Solutions</h3>
+              class="forLinkC text-dark pointer py-2 pe-5 w-fit">Audio Visual Solutions</h3>
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6"
-              class="forLinkC pointer py-2 pe-5 w-fit">Technical Support</h3>
+              class="forLinkC text-dark pointer py-2 pe-5 w-fit">Technical Support</h3>
             <h3 data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7"
-              class="forLinkC pointer py-2 pe-5 w-fit">Web Designing</h3>
+              class="forLinkC text-dark pointer py-2 pe-5 w-fit">Web Designing</h3>
 
           </div>
         </div>
@@ -330,7 +323,7 @@
     <div class="text-dark bg-white bg-dark text-center text-light py-4 position-relative" id="brands">
       <div class="position-absolute w-100 top-0 text-light before text-center beforeRotate">
         <a href="#brands">
-          <i class="bi bi-caret-up-fill position-absolute revRotate text-muted pointer"></i>
+          <i class="bi bi-caret-up-fill position-absolute revRotate text-dark specArrow pointer"></i>
         </a>
         <img src="assets/images/arrow.png" class="arrowImage" alt="" srcset="">
       </div>

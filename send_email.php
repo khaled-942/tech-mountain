@@ -21,14 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["fname"]) && isset($_PO
         $mail->isSMTP();
         $mail->Host = 'mail.techmountains.net'; // Replace with your SMTP server hostname => 1
         $mail->SMTPAuth = true;
-        $mail->Username = 'cibahy@techmountains.net'; // Replace with your SMTP username => 2
-        $mail->Password = 'cibahy@123'; // Replace with your SMTP password => 3
+        $mail->Username = 'sales@techmountains.net'; // Replace with your SMTP username => 2
+        $mail->Password = 'Pharaoh@2010'; // Replace with your SMTP password => 3
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
         // Set sender and recipient
         $mail->setFrom($email, $fname . " " . $lname);
-        $mail->addAddress('cibahy@techmountains.net'); // Replace with your SMTP username => 4 like 2
+        $mail->addAddress('ahmed@techmountains.net'); // Replace with your SMTP username => 4 like 2
 
         // Set email content
         $mail->Subject = "Tech Mountains";
